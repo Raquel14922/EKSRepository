@@ -18,6 +18,7 @@ pipeline {
         TF_VAR_environment      = 'raquel'
     }
     stages {
+        /*
         stage('Create Infra') {
             when {
                 equals expected: true, actual: params.deploy
@@ -28,8 +29,8 @@ pipeline {
                     sh "terraform apply --auto-approve"
                 }
             }
-        }
-           stage('secrets') {
+        }*/
+        stage('secrets') {
             when {
                 equals expected: true, actual: params.deploy
             }
