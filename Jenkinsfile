@@ -15,7 +15,7 @@ pipeline {
         AWS_SECRET_ACCESS_KEY   = credentials('AWS_SECRET_ACCESS_KEY')
         AWS_ACCOUNT_ID          = "262583979852"
         AWS_DEFAULT_REGION      = "us-east-1" 
-        TF_VAR_environment      = 'environment'
+        TF_VAR_environment      = 'raquel'
     }
     stages {
         stage('Create Infra') {
